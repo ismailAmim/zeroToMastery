@@ -1,0 +1,28 @@
+/* selector { 
+    property : : value
+} */
+
+body {
+    background-image: url(photo-16.jpg);
+    background-size: cover;
+}
+
+h2 {
+    color: #A75486;
+    text-align: center;
+    border: 5px solid purple;
+    cursor: pointer;
+}
+
+p {
+    color: blue;
+}
+
+p {
+    color: green;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
