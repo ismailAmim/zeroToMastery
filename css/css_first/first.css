@@ -2,8 +2,17 @@
     property : : value
 } */
 
+
+/* all selectors
+ using *
+*/
+
+* {
+    text-align: right;
+}
+
 body {
-    background-image: url(photo-16.jpg);
+    /* background-image: url(photo-16.jpg);*/
     background-size: cover;
 }
 
@@ -26,4 +35,87 @@ p {
 li {
     list-style: none;
     display: inline-block;
+}
+
+
+/*
+ css selectors
+ .class useful for multiple selection
+ # id  used for one and one element
+ * all
+ element
+ element, element : element with element 
+ element elemnt :  element in sublings element
+ element1 > element2 : element2 that  have direct parent e1
+ element + element
+ : hover
+ : :last-child
+ : :first-child
+ !important (not recommended)
+
+ what selector  win out depends on :
+ specificity > # :hover .class
+ importance
+ source order : latest become first
+ */
+
+.web-text:first-child {
+    border: dashed blue 2px;
+}
+
+.active {
+    color: red
+}
+
+#div1:hover {
+    background: rgb(53, 173, 17);
+}
+
+#div2 {
+    background: rgb(194, 45, 90);
+}
+
+div p {
+    color: rgb(207, 205, 86);
+}
+
+
+/* direct child
+
+h2>p {
+    background: steelblue;
+    text-align: left;
+}
+*/
+
+
+/* right after the element
+
+h2+p {
+    /*background: lightcoral;
+    color: lightslategray;
+}*/
+
+p {
+    /* text-decoration: line-through;
+    text-transform: uppercase;*/
+    line-height: 50px;
+    font-style: italic;
+    font-size: 25px;
+    font-weight: bold;
+    /* downloaded montecarlo font from google "*/
+    font-family: 'MonteCarlo', cursive;
+}
+
+img {
+    float: left;
+}
+
+
+/* to eliminate the effect of float 
+we just use clear property */
+
+footer {
+    clear: both;
+    text-align: center
 }

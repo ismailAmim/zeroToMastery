@@ -1,0 +1,35 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header.startup {
+    background-image: url("header.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+header.startup hr {
+    margin-top: 300px;
+    margin-bottom: 10px;
+}
+
+hr {
+    max-width: 10%;
+    border-width: 5px;
+    border-color: #F05F44;
+    color: orangered;
+    position: relative;
+    left: 45%;
+}
+
+.btn-danger {
+    background-color: orange;
+    border-radius: 20px;
+}
