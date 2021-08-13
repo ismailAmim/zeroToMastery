@@ -1,0 +1,80 @@
+javascript can manipulate DOM 
+change elements
+change attributes
+change data and illustrations 
+
+The HTML DOM (Document Object Model)
+When a web page is loaded, the browser creates a Document Object Model of the page.
+
+The HTML DOM model is constructed as a tree of Objects:
+        Document
+            |
+  -----root HTML -----
+  |                   |
+head                 body
+ **                   **
+ DOM Selectors
+--------------
+getElementsByTagName
+getElementsByClassName
+getElementById
+
+querySelector
+querySelectorAll
+
+getAttribute
+setAttribute
+
+##Changing Styles
+style.property //ok
+
+document.querySelector("p").style.background = "yellow";
+"yellow"
+
+className //best
+
+var h1 = document.querySelector("p");
+undefined
+h1.className = "coolTitle";
+
+classList //best
+document.querySelector("p").classList;
+DOMTokenList ["coolTitle", value: "coolTitle"]
+
+classList.add
+document.querySelector("p").classList.add("coolbhn");
+undefined
+
+classList.remove
+document.querySelector("p").classList.remove("coolbhn");
+undefined
+
+
+classList.toggle
+document.querySelector("p").classList.toggle("ok");
+true
+document.querySelector("p").classList.toggle("ok");
+false
+##Bonus
+innerHTML //DANGEROUS
+document.querySelector("p").innerHTML = "<strong> !!!!! </strong>";
+"<strong> !!!!! </strong>"
+
+parentElement
+document.querySelector("p").parentElement;
+<body>​…​</body>​
+
+
+children
+document.querySelector("p").children;
+HTMLCollection [strong]
+
+##It is important to CACHE selectors in variables
+document.querySelector("p").children;
+document.querySelector("p").children;
+document.querySelector("p").children;
+document.querySelector("p").children;
+document.querySelector("p").children;
+to avoid memory saturation
+we just store the result into an element
+var child = document.querySelector("p").children;
